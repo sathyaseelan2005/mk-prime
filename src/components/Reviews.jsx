@@ -29,7 +29,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-20 md:py-32 bg-white">
+    <section id="reviews" className="py-10 md:py-16 bg-white">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -40,7 +40,7 @@ export default function Reviews() {
             transition={{ duration: 0.6 }}
             className="text-center mb-10"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary">Customer Reviews</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-primary tracking-tight">Customer Reviews</h2>
           </motion.div>
 
           {/* Overall Rating Summary */}
@@ -102,14 +102,12 @@ export default function Reviews() {
             >
               {reviews.map((review, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-white border border-gray-100 shadow-sm rounded-2xl p-8 h-full flex flex-col hover:shadow-md transition-shadow">
+                  <div className="bg-white border border-gray-100 shadow-sm rounded-2xl p-8 h-full flex flex-col hover:shadow-md section-card-hover">
                     {/* Author */}
                     <div className="flex items-center gap-4 mb-4">
-                      <img
-                        src={review.image}
-                        alt={review.name}
-                        className="w-14 h-14 rounded-full object-cover"
-                      />
+                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl font-bold uppercase shrink-0">
+                        {review.name.charAt(0)}
+                      </div>
                       <div className="font-bold text-text text-lg">{review.name}</div>
                     </div>
 

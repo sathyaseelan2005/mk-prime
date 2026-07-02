@@ -5,8 +5,8 @@ import { Link } from 'react-scroll';
 
 const navLinks = [
   { name: 'Home', to: 'hero' },
-  { name: 'About', to: 'about' },
   { name: 'Services', to: 'services' },
+  { name: 'About', to: 'about' },
   { name: 'Gallery', to: 'gallery' },
   { name: 'Reviews', to: 'reviews' },
   { name: 'Contact', to: 'contact' },
@@ -73,11 +73,11 @@ export default function Navbar() {
             {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-4">
               <a 
-                href="tel:+1234567890" 
+                href="tel:9080922342" 
                 className="flex items-center gap-2 text-sm font-medium transition-colors text-white"
               >
                 <Phone size={18} />
-                <span className="hidden xl:inline">+1 234 567 890</span>
+                <span className="hidden xl:inline">+91 90809 22342</span>
               </a>
               <Link
                 to="quote"

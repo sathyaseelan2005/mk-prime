@@ -36,7 +36,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-10 md:py-16 bg-white">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -47,8 +47,8 @@ export default function Process() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary">How We Work</h2>
-              <h2 className="text-xl md:text-2xl font-semibold text-primary mt-2 mb-4">
+            <h2 className="text-5xl md:text-6xl font-black text-primary tracking-tight">How We Work</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold text-primary mt-3 mb-6">
               Our <span className="text-secondary">Process</span>
             </h2>
             <p className="text-text/70 text-lg max-w-2xl mx-auto">

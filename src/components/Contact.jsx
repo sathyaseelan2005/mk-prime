@@ -5,28 +5,28 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    details: ['123 Main Street', 'New York, NY 10001'],
+    details: ['RR3W+5PR P.N.Patti', 'Tamil Nadu'],
     color: 'bg-blue-50',
     iconColor: 'text-blue-600',
   },
   {
     icon: Phone,
     title: 'Call Us',
-    details: ['+1 (234) 567-890', '+1 (234) 567-891'],
+    details: ['+91 90809 22342'],
     color: 'bg-green-50',
     iconColor: 'text-green-600',
   },
   {
     icon: MessageCircle,
     title: 'WhatsApp',
-    details: ['+1 (234) 567-892'],
+    details: ['+91 90809 22342'],
     color: 'bg-emerald-50',
     iconColor: 'text-emerald-600',
   },
   {
     icon: Mail,
     title: 'Email Us',
-    details: ['info@mkprime.com', 'quotes@mkprime.com'],
+    details: ['kesavanmeiyappan@gmail.com'],
     color: 'bg-purple-50',
     iconColor: 'text-purple-600',
   },
@@ -41,7 +41,7 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 md:py-32 bg-white">
+    <section id="contact" className="py-10 md:py-16 bg-white">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -52,8 +52,8 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary">Contact Us</h2>
-              <h2 className="text-xl md:text-2xl font-semibold text-primary mt-2 mt-2 mb-4">
+            <h2 className="text-5xl md:text-6xl font-black text-primary tracking-tight">Contact Us</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold text-primary mt-3 mb-6">
               Get In <span className="text-secondary">Touch</span>
             </h2>
             <p className="text-text/70 text-lg max-w-2xl mx-auto">

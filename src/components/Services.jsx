@@ -51,7 +51,7 @@ export default function Services() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-white">
+    <section id="services" className="py-10 md:py-16 bg-white">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -62,8 +62,8 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary">Our Services</h2>
-              <h2 className="text-xl md:text-2xl font-semibold text-primary mt-2 mb-4">
+            <h2 className="text-5xl md:text-6xl font-black text-primary tracking-tight">Our Services</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold text-primary mt-3 mb-6">
               Premium <span className="text-secondary">Painting Solutions</span>
             </h2>
             <p className="text-text/70 text-lg max-w-2xl mx-auto">
@@ -82,7 +82,7 @@ export default function Services() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:bg-[#1e3a5f] hover:text-white"
+                className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:bg-primary hover:text-white"
               >
                 {/* Image */}
                 <div className="relative h-56 overflow-hidden">

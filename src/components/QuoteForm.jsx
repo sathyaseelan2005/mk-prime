@@ -38,7 +38,7 @@ export default function QuoteForm() {
   const inputClasses = "w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl text-text placeholder:text-gray-400 focus:outline-none focus:border-secondary transition-colors duration-300";
 
   return (
-    <section id="quote" className="py-20 md:py-32 bg-section-alt">
+    <section id="quote" className="py-10 md:py-16 bg-section-alt">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -49,9 +49,9 @@ export default function QuoteForm() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary">Get In Touch</h2>
-              <h2 className="text-xl md:text-2xl font-semibold text-primary mt-2 mt-2 mb-4">
-              Request a <span className="text-secondary">Free Quote</span>
+            <h2 className="text-5xl md:text-6xl font-black text-primary tracking-tight">Get In Touch</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold text-primary mt-3 mb-6">
+              Request A <span className="text-secondary">Quote</span>
             </h2>
             <p className="text-text/70 text-lg max-w-2xl mx-auto">
               Tell us about your project and we'll get back to you with a detailed estimate

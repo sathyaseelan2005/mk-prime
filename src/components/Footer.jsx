@@ -116,18 +116,18 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                  <span className="text-white/70 text-sm">123 Main Street, New York, NY 10001</span>
+                  <span className="text-white/70 text-sm">RR3W+5PR P.N.Patti, Tamil Nadu</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
-                  <a href="tel:+1234567890" className="text-white/70 text-sm hover:text-secondary transition-colors">
-                    +1 (234) 567-890
+                  <a href="tel:9080922342" className="text-white/70 text-sm hover:text-secondary transition-colors">
+                    +91 90809 22342
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                  <a href="mailto:info@mkprime.com" className="text-white/70 text-sm hover:text-secondary transition-colors">
-                    info@mkprime.com
+                  <a href="mailto:kesavanmeiyappan@gmail.com" className="text-white/70 text-sm hover:text-secondary transition-colors">
+                    kesavanmeiyappan@gmail.com
                   </a>
                 </li>
               </ul>
