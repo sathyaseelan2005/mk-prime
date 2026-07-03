@@ -52,9 +52,9 @@ export default function About() {
           <div className="flex flex-col lg:flex-row items-stretch gap-10 xl:gap-12">
             
             {/* Left - Image */}
-            <div className="w-full lg:w-1/3 relative h-[350px] lg:h-auto rounded-2xl overflow-hidden shadow-2xl shrink-0">
+            <div className="w-full lg:w-1/3 relative h-[350px] lg:min-h-full rounded-2xl overflow-hidden shadow-2xl shrink-0">
               <img
-                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0d?w=800&q=80"
+                src="https://picsum.photos/seed/painting-team/800/800"
                 alt="Professional painting team"
                 className="absolute inset-0 w-full h-full object-cover"
               />

@@ -4,26 +4,26 @@ const projects = [
   {
     id: 1,
     title: 'EXTERIOR PAINTING',
-    beforeImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&q=80',
-    afterImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80',
+    beforeImage: 'https://picsum.photos/seed/ext-before/400/400',
+    afterImage: 'https://picsum.photos/seed/ext-after/400/400',
   },
   {
     id: 2,
     title: 'WATERPROOFING',
-    beforeImage: 'https://images.unsplash.com/photo-1574360773981-5d9eb32223c6?w=400&q=80',
-    afterImage: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80',
+    beforeImage: 'https://picsum.photos/seed/water-before/400/400',
+    afterImage: 'https://picsum.photos/seed/water-after/400/400',
   },
   {
     id: 3,
     title: 'INTERIOR PAINTING',
-    beforeImage: 'https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=400&q=80',
-    afterImage: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&q=80',
+    beforeImage: 'https://picsum.photos/seed/int-before/400/400',
+    afterImage: 'https://picsum.photos/seed/int-after/400/400',
   },
   {
     id: 4,
     title: 'TEXTURE PAINTING',
-    beforeImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80',
-    afterImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
+    beforeImage: 'https://picsum.photos/seed/tex-before/400/400',
+    afterImage: 'https://picsum.photos/seed/tex-after/400/400',
   }
 ];
 

@@ -42,7 +42,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
               <div className="flex items-center gap-2">
-                <img src={logo} alt="MK Prime" className="h-10 md:h-12 object-contain bg-white rounded p-1" />
+                <img src={logo} alt="MK Prime" className="h-16 md:h-20 object-contain bg-white rounded p-1" />
               </div>
             </Link>
 
