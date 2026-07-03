@@ -19,6 +19,7 @@ export default function QuoteForm() {
     email: '',
     service: '',
     area: '',
+    location: '',
     date: '',
     message: '',
   });
@@ -49,7 +50,7 @@ export default function QuoteForm() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-6xl font-black text-primary tracking-tight">Get In Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-primary tracking-tight">Get In Touch</h2>
               <h2 className="text-2xl md:text-3xl font-semibold text-primary mt-3 mb-6">
               Request A <span className="text-secondary">Quote</span>
             </h2>
@@ -199,6 +200,19 @@ export default function QuoteForm() {
                         onChange={handleChange}
                         className={inputClasses}
                         placeholder="e.g., 2000 sq ft"
+                      />
+                    </div>
+
+                    {/* Location */}
+                    <div>
+                      <label className="block text-sm font-medium text-text mb-2">Project Location</label>
+                      <input
+                        type="text"
+                        name="location"
+                        value={formData.location}
+                        onChange={handleChange}
+                        className={inputClasses}
+                        placeholder="City, Area"
                       />
                     </div>
 

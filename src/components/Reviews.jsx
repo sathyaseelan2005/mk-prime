@@ -25,11 +25,23 @@ const reviews = [
     rating: 5,
     text: 'Very satisfied with their service. Team was very good and friendly.',
   },
+  {
+    name: 'Ramesh K',
+    image: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&q=80',
+    rating: 5,
+    text: 'Outstanding service! The team was polite, arrived on time, and did an amazing job with the texture painting.',
+  },
+  {
+    name: 'Anita',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
+    rating: 4,
+    text: 'Really happy with the waterproofing work. They explained the process clearly and the finish is excellent.',
+  },
 ];
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-10 md:py-16 bg-white">
+    <section id="reviews" className="py-10 md:py-16 bg-blue-50">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -40,7 +52,7 @@ export default function Reviews() {
             transition={{ duration: 0.6 }}
             className="text-center mb-10"
           >
-            <h2 className="text-4xl md:text-5xl font-black text-primary tracking-tight">Customer Reviews</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-primary tracking-tight">Customer Reviews</h2>
           </motion.div>
 
           {/* Overall Rating Summary */}
@@ -76,8 +88,10 @@ export default function Reviews() {
               modules={[Autoplay, Pagination, Navigation]}
               spaceBetween={30}
               slidesPerView={1}
+              loop={true}
+              speed={4000}
               autoplay={{
-                delay: 5000,
+                delay: 0,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
               }}
@@ -98,21 +112,21 @@ export default function Reviews() {
                   slidesPerView: 3,
                 },
               }}
-              className="pb-16"
+              className="pb-16 continuous-slider"
             >
               {reviews.map((review, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-white border border-gray-100 shadow-sm rounded-2xl p-8 h-full flex flex-col hover:shadow-md section-card-hover">
+                <SwiperSlide key={index} className="h-auto">
+                  <div className="bg-primary border border-gray-800 shadow-md rounded-2xl p-8 h-full flex flex-col text-white transition-all duration-300 hover:shadow-xl">
                     {/* Author */}
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl font-bold uppercase shrink-0">
+                      <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center text-white text-2xl font-bold uppercase shrink-0">
                         {review.name.charAt(0)}
                       </div>
-                      <div className="font-bold text-text text-lg">{review.name}</div>
+                      <div className="font-bold text-white text-lg">{review.name}</div>
                     </div>
 
                     {/* Review Text */}
-                    <p className="text-text/80 leading-relaxed mb-6 flex-grow">
+                    <p className="text-white/80 leading-relaxed mb-6 flex-grow">
                       {review.text}
                     </p>
 

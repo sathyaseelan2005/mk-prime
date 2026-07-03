@@ -34,7 +34,7 @@ export default function Gallery() {
         <div className="max-w-[1400px] mx-auto text-center">
 
           <h2 className="text-secondary text-4xl md:text-5xl font-black tracking-tighter uppercase mb-3"></h2>
-          <h2 className="text-sm font-bold text-text mb-16 uppercase tracking-widest">
+          <h2 className="text-2xl md:text-3xl font-black text-primary mb-16 uppercase tracking-tight">
             Recently Completed Projects
           </h2>
 

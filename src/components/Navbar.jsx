@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import { Link } from 'react-scroll';
+import logo from '../assets/logo.png';
 
 const navLinks = [
   { name: 'Home', to: 'hero' },
@@ -41,12 +42,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
               <div className="flex items-center gap-2">
-                <div className="text-2xl md:text-3xl font-bold tracking-tight text-white">
-                  MK <span className="text-secondary">PRIME</span>
-                </div>
-                <div className="hidden sm:block text-xs font-medium tracking-wider uppercase text-white/70">
-                  Coating & Contractor
-                </div>
+                <img src={logo} alt="MK Prime" className="h-12 md:h-16 object-contain bg-white rounded p-1" />
               </div>
             </Link>
 

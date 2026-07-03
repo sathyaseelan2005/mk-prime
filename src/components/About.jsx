@@ -62,7 +62,7 @@ export default function About() {
 
             {/* Middle - Text Content */}
             <div className="w-full lg:w-1/3 flex flex-col justify-center py-4">
-              <h3 className="text-secondary font-bold text-5xl md:text-6xl tracking-widest uppercase mb-4">About Us</h3>
+              <h3 className="text-secondary font-bold text-3xl md:text-4xl tracking-widest uppercase mb-4">About Us</h3>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
                 MK Prime Coating & Contractor
               </h2>

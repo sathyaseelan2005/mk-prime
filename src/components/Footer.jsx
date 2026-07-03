@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const quickLinks = [
   { name: 'Home', to: 'hero' },
@@ -41,8 +42,8 @@ export default function Footer() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-1"
             >
-              <div className="text-3xl font-bold mb-4">
-                MK <span className="text-secondary">PRIME</span>
+              <div className="mb-4">
+                <img src={logo} alt="MK Prime" className="h-16 object-contain bg-white rounded p-1" />
               </div>
               <p className="text-white/70 text-sm leading-relaxed mb-6">
                 Professional painting and coating services for residential, commercial, and industrial spaces. 

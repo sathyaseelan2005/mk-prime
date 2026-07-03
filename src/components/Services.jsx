@@ -28,7 +28,7 @@ const services = [
     icon: Palette,
     title: 'Texture Painting',
     description: 'Add depth and character to your walls with our creative texture painting techniques and designs.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
     features: ['Stucco Finish', 'Venetian Plaster', 'Metallic Effects', 'Custom Patterns'],
   },
   {
@@ -62,7 +62,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-6xl font-black text-primary tracking-tight">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-primary tracking-tight">Our Services</h2>
               <h2 className="text-2xl md:text-3xl font-semibold text-primary mt-3 mb-6">
               Premium <span className="text-secondary">Painting Solutions</span>
             </h2>

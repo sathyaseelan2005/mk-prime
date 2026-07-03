@@ -56,6 +56,10 @@
   .section-card-hover:hover svg {
     color: #D9A520 !important;
   }
+  
+  .continuous-slider .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
 }
 
 @layer utilities {

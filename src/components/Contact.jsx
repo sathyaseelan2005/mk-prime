@@ -30,13 +30,7 @@ const contactInfo = [
     color: 'bg-purple-50',
     iconColor: 'text-purple-600',
   },
-  {
-    icon: Clock,
-    title: 'Business Hours',
-    details: ['Mon - Fri: 8:00 AM - 6:00 PM', 'Sat: 9:00 AM - 4:00 PM'],
-    color: 'bg-orange-50',
-    iconColor: 'text-orange-600',
-  },
+
 ];
 
 export default function Contact() {
@@ -52,7 +46,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-6xl font-black text-primary tracking-tight">Contact Us</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-primary tracking-tight">Contact Us</h2>
               <h2 className="text-2xl md:text-3xl font-semibold text-primary mt-3 mb-6">
               Get In <span className="text-secondary">Touch</span>
             </h2>
