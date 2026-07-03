@@ -41,7 +41,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-10 md:py-16 bg-blue-50">
+    <section id="reviews" className="py-6 md:py-10 bg-blue-50">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

@@ -46,7 +46,7 @@ function StatCard({ icon: Icon, end, suffix, label }) {
 
 export default function About() {
   return (
-    <section id="about" className="bg-primary py-10 lg:py-12">
+    <section id="about" className="bg-primary py-6 lg:py-8">
       <div className="section-padding">
         <div className="max-w-[1400px] mx-auto">
           <div className="flex flex-col lg:flex-row items-stretch gap-10 xl:gap-12">

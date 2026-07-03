@@ -35,7 +35,7 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-10 md:py-16 bg-white">
+    <section id="contact" className="py-6 md:py-10 bg-white">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

@@ -54,7 +54,7 @@ function StatCard({ icon: Icon, end, suffix, label }) {
 
 export default function Statistics() {
   return (
-    <section className="py-20 md:py-32 bg-primary relative overflow-hidden">
+    <section className="py-10 md:py-16 bg-primary relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

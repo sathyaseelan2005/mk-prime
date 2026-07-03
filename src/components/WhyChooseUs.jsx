@@ -36,7 +36,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-10 md:py-16 bg-section-alt">
+    <section className="py-6 md:py-10 bg-section-alt">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

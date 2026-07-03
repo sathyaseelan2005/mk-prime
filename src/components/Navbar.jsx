@@ -34,7 +34,7 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-primary ${
-          isScrolled ? 'shadow-lg py-3' : 'py-5'
+          isScrolled ? 'shadow-lg py-2' : 'py-3'
         }`}
       >
         <div className="section-padding">
@@ -42,7 +42,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
               <div className="flex items-center gap-2">
-                <img src={logo} alt="MK Prime" className="h-12 md:h-16 object-contain bg-white rounded p-1" />
+                <img src={logo} alt="MK Prime" className="h-10 md:h-12 object-contain bg-white rounded p-1" />
               </div>
             </Link>
 

@@ -39,7 +39,7 @@ export default function QuoteForm() {
   const inputClasses = "w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl text-text placeholder:text-gray-400 focus:outline-none focus:border-secondary transition-colors duration-300";
 
   return (
-    <section id="quote" className="py-10 md:py-16 bg-section-alt">
+    <section id="quote" className="py-6 md:py-10 bg-section-alt">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

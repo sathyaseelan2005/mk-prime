@@ -36,7 +36,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-10 md:py-16 bg-white">
+    <section className="py-6 md:py-10 bg-white">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

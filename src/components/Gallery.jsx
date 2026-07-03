@@ -29,13 +29,13 @@ const projects = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="py-10 md:py-16 bg-white">
+    <section id="gallery" className="py-6 md:py-10 bg-white">
       <div className="section-padding">
         <div className="max-w-[1400px] mx-auto text-center">
 
           <h2 className="text-secondary text-4xl md:text-5xl font-black tracking-tighter uppercase mb-3"></h2>
           <h2 className="text-2xl md:text-3xl font-black text-primary mb-16 uppercase tracking-tight">
-            Recently Completed Projects
+            Recently <span className="text-secondary">Completed</span> Projects
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
