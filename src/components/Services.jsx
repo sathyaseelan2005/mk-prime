@@ -8,7 +8,7 @@ export default function Services({ limit }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id="services" className="py-6 md:py-10 bg-white">
+    <section id="services" className="py-16 md:py-24 bg-white">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
