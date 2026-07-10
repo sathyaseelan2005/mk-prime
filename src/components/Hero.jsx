@@ -1,150 +1,133 @@
 import { motion } from 'framer-motion';
+import { Phone, Calendar, ShieldCheck, Users, Clock } from 'lucide-react';
 import { Link } from 'react-scroll';
-import { Phone, ArrowRight, Award, Users, Building2 } from 'lucide-react';
-import { useCounter } from '../hooks/useCounter';
-
-function StatCard({ icon: Icon, end, suffix, label, delay }) {
-  const { count, ref } = useCounter(end, 2000);
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay, duration: 0.6 }}
-      className="glass-effect rounded-2xl p-6 text-center"
-    >
-      <Icon className="w-8 h-8 text-secondary mx-auto mb-3" />
-      <div className="text-3xl md:text-4xl font-bold text-white mb-1">
-        {count}{suffix}
-      </div>
-      <div className="text-white/70 text-sm">{label}</div>
-    </motion.div>
-  );
-}
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
+    <section id="hero" className="relative bg-primary min-h-screen flex flex-col justify-center overflow-hidden pt-20">
+      {/* Right Background Image (Desktop) */}
+      <div className="hidden lg:block absolute top-0 right-0 w-[65%] xl:w-[70%] h-full">
         <img
-          src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1920&q=80"
-          alt="Professional painting work"
-          className="w-full h-full object-cover"
+          src="/hero-house.png"
+          alt="Modern House"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-primary/75" />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-transparent to-primary/60" />
+        {/* Fade gradient from left to right */}
+        <div className="absolute inset-y-0 left-0 w-64 bg-gradient-to-r from-primary via-primary/50 to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 section-padding w-full pt-24 pb-32">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 bg-secondary/20 border border-secondary/30 rounded-full px-4 py-2 mb-6"
-              >
-                <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
-                <span className="text-secondary text-sm font-medium">Trusted Painting Experts</span>
-              </motion.div>
+      <div className="max-w-7xl mx-auto w-full relative z-10 flex-grow flex items-center">
+        <div className="grid lg:grid-cols-12 gap-8 w-full items-center">
+          {/* Left Content */}
+          <div className="px-6 py-12 lg:py-0 lg:col-span-6 xl:col-span-6">
+            
+            {/* Top Label */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-block border border-secondary/40 px-3 py-1 mb-6 text-xs font-bold text-secondary tracking-widest uppercase"
+            >
+              We coat, we protect, we beautify
+            </motion.div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.2 }}
-                className="heading-xl text-white mb-6"
-              >
-                Professional Painting &{' '}
-                <span className="text-secondary">Coating Services</span>
-              </motion.h1>
+            {/* Heading */}
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-[1.1] mb-6 tracking-tight"
+            >
+              PROFESSIONAL<br />
+              <span className="text-secondary">PAINTING &<br />WATERPROOFING</span><br />
+              SOLUTIONS
+            </motion.h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.4 }}
-                className="text-lg md:text-xl text-white/80 mb-8 max-w-xl leading-relaxed"
-              >
-                We bring color, quality, and long-lasting protection to your residential, 
-                commercial, and industrial spaces. Transform your property with our expert team.
-              </motion.p>
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="text-gray-300 text-base sm:text-lg max-w-lg mb-10 leading-relaxed font-light"
+            >
+              Enhancing spaces with perfection.<br />
+              Quality coating solutions for your home, office & industrial projects.
+            </motion.p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.6 }}
-                className="flex flex-wrap gap-4"
+            {/* Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+              className="flex flex-wrap gap-4 mb-10"
+            >
+              <a
+                href="tel:+919080922342"
+                className="flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-primary font-bold px-8 py-3.5 rounded text-sm uppercase tracking-wider transition-colors"
               >
-                <Link
-                  to="quote"
-                  smooth={true}
-                  duration={500}
-                  className="group bg-secondary text-white px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-2 hover:bg-secondary/90 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/30 hover:-translate-y-1"
-                >
-                  Get Free Quote
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <a
-                  href="tel:+1234567890"
-                  className="group border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-2 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1"
-                >
-                  <Phone className="w-5 h-5" />
-                  Call Now
-                </a>
-              </motion.div>
-            </div>
+                <Phone size={18} className="text-primary" />
+                Call Now
+              </a>
+              <Link
+                to="quote"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer flex items-center gap-2 border border-secondary/50 hover:border-secondary text-white hover:bg-secondary/10 font-bold px-8 py-3.5 rounded text-sm uppercase tracking-wider transition-colors"
+              >
+                <Calendar size={18} className="text-secondary" />
+                Get a Quote
+              </Link>
+            </motion.div>
 
-            {/* Right - Floating Stats */}
-            <div className="hidden lg:block">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className="relative"
-              >
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-4 mt-8">
-                    <StatCard
-                      icon={Award}
-                      end={15}
-                      suffix="+"
-                      label="Years Experience"
-                      delay={0.8}
-                    />
-                    <StatCard
-                      icon={Building2}
-                      end={2500}
-                      suffix="+"
-                      label="Projects Completed"
-                      delay={1.0}
-                    />
-                  </div>
-                  <div className="space-y-4">
-                    <StatCard
-                      icon={Users}
-                      end={1800}
-                      suffix="+"
-                      label="Happy Clients"
-                      delay={0.9}
-                    />
-                    <div className="glass-effect rounded-2xl p-6 text-center">
-                      <div className="text-3xl font-bold text-secondary mb-1">98%</div>
-                      <div className="text-white/70 text-sm">Satisfaction Rate</div>
-                    </div>
-                  </div>
+            {/* Features Row */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.8 }}
+              className="grid grid-cols-1 sm:grid-cols-3 gap-6"
+            >
+              {/* Feature 1 */}
+              <div className="flex gap-4 items-start">
+                <ShieldCheck className="w-8 h-8 text-secondary shrink-0" strokeWidth={1.5} />
+                <div>
+                  <h4 className="text-white font-semibold text-sm mb-1">Quality Materials</h4>
+                  <p className="text-gray-400 text-xs leading-relaxed">We use only premium quality products</p>
                 </div>
-              </motion.div>
+              </div>
+              
+              {/* Feature 2 */}
+              <div className="flex gap-4 items-start">
+                <Users className="w-8 h-8 text-secondary shrink-0" strokeWidth={1.5} />
+                <div>
+                  <h4 className="text-white font-semibold text-sm mb-1">Expert Team</h4>
+                  <p className="text-gray-400 text-xs leading-relaxed">Skilled professionals with years of experience</p>
+                </div>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="flex gap-4 items-start">
+                <Clock className="w-8 h-8 text-secondary shrink-0" strokeWidth={1.5} />
+                <div>
+                  <h4 className="text-white font-semibold text-sm mb-1">On-Time Delivery</h4>
+                  <p className="text-gray-400 text-xs leading-relaxed">We value your time and deliver on schedule</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          
+          {/* Mobile Image (Visible only on small screens) */}
+          <div className="lg:hidden col-span-full px-6 pb-12">
+            <div className="w-full h-[300px] sm:h-[400px] rounded-2xl overflow-hidden relative">
+              <img
+                src="/hero-house.png"
+                alt="Modern House"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-primary/20" />
             </div>
           </div>
         </div>
       </div>
-
-      {/* Bottom Gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 }

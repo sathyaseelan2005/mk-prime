@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Phone, Mail, MapPin, Paintbrush } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const quickLinks = [
@@ -9,14 +9,7 @@ const quickLinks = [
   { name: 'Contact', to: '/contact' },
 ];
 
-const services = [
-  'Interior Painting',
-  'Exterior Painting',
-  'Waterproofing',
-  'Texture Painting',
-  'Industrial Painting',
-  'Government Contracts',
-];
+import { services } from '../data/services';
 
 const socialLinks = [
   { icon: Facebook, href: 'https://www.facebook.com/share/18oy7chVSw/', label: 'Facebook' },
@@ -91,10 +84,13 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-              <ul className="space-y-1.5">
+              <ul className="space-y-2">
                 {services.map((service) => (
-                  <li key={service}>
-                    <span className="text-white/70 text-sm">{service}</span>
+                  <li key={service.id} className="flex items-center gap-2">
+                    <Paintbrush className="w-4 h-4 text-secondary shrink-0" />
+                    <Link to={`/services/${service.id}`} className="text-white/70 text-sm hover:text-secondary transition-colors cursor-pointer">
+                      {service.title}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -135,12 +131,25 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="section-padding py-4">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/50 text-sm">
+            <p className="text-white/50 text-sm order-1 md:order-none">
               © {new Date().getFullYear()} MK PRIME. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <a href="#" className="text-white/50 hover:text-secondary text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-white/50 hover:text-secondary text-sm transition-colors">Terms of Service</a>
+            
+            <p className="text-white/50 text-sm order-3 md:order-none text-center">
+              Design and Developed By{' '}
+              <a 
+                href="https://pepsoftwares.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-secondary hover:text-white transition-colors font-medium"
+              >
+                PepSoftware
+              </a>
+            </p>
+
+            <div className="flex gap-6 order-2 md:order-none">
+              <Link to="/privacy-policy" className="text-white/50 hover:text-secondary text-sm transition-colors cursor-pointer">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-white/50 hover:text-secondary text-sm transition-colors cursor-pointer">Terms of Service</Link>
             </div>
           </div>
         </div>

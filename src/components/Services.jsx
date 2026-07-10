@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Paintbrush } from 'lucide-react';
 import { services } from '../data/services';
 
 export default function Services({ limit }) {
@@ -70,7 +71,7 @@ export default function Services({ limit }) {
                     <div className="space-y-2 mb-6">
                       {service.features.map((feature) => (
                         <div key={feature} className="flex items-center gap-2 text-sm text-text/60 group-hover:text-white/80 transition-colors duration-300">
-                          <div className="w-1.5 h-1.5 bg-secondary rounded-full" />
+                          <Paintbrush className="w-4 h-4 text-secondary shrink-0" />
                           {feature}
                         </div>
                       ))}
