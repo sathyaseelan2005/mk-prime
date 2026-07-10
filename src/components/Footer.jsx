@@ -1,15 +1,12 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
-import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const quickLinks = [
-  { name: 'Home', to: 'hero' },
-  { name: 'About Us', to: 'about' },
-  { name: 'Services', to: 'services' },
-  { name: 'Gallery', to: 'gallery' },
-  { name: 'Reviews', to: 'reviews' },
-  { name: 'Contact', to: 'contact' },
+  { name: 'Home', to: '/' },
+  { name: 'Services', to: '/services' },
+  { name: 'Contact', to: '/contact' },
 ];
 
 const services = [
@@ -22,16 +19,15 @@ const services = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
+  { icon: Facebook, href: 'https://www.facebook.com/share/18oy7chVSw/', label: 'Facebook' },
   { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-primary text-white">
       {/* Main Footer */}
-      <div className="section-padding py-8 md:py-12">
+      <div className="section-padding py-6 md:py-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand Column */}
@@ -45,7 +41,7 @@ export default function Footer() {
               <div className="mb-4">
                 <img src={logo} alt="MK Prime" className="h-16 object-contain bg-white rounded p-1" />
               </div>
-              <p className="text-white/70 text-sm leading-relaxed mb-6">
+              <p className="text-white/70 text-sm leading-relaxed mb-4">
                 Professional painting and coating services for residential, commercial, and industrial spaces. 
                 Quality you can trust, results you'll love.
               </p>
@@ -72,14 +68,12 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-              <ul className="space-y-3">
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-1.5">
                 {quickLinks.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.to}
-                      smooth={true}
-                      duration={500}
                       className="text-white/70 hover:text-secondary transition-colors duration-300 text-sm cursor-pointer"
                     >
                       {link.name}
@@ -96,8 +90,8 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="text-lg font-semibold mb-6">Our Services</h3>
-              <ul className="space-y-3">
+              <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+              <ul className="space-y-1.5">
                 {services.map((service) => (
                   <li key={service}>
                     <span className="text-white/70 text-sm">{service}</span>
@@ -113,8 +107,8 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
-              <ul className="space-y-4">
+              <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                   <span className="text-white/70 text-sm">RR3W+5PR P.N.Patti, Tamil Nadu</span>
