@@ -4,16 +4,16 @@ import { Link } from 'react-scroll';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative bg-primary min-h-screen flex flex-col justify-center overflow-hidden pt-20">
-      {/* Right Background Image (Desktop) */}
-      <div className="hidden lg:block absolute top-0 right-0 w-[65%] xl:w-[70%] h-full">
+    <section id="hero" className="relative bg-primary min-h-[85vh] flex flex-col justify-center overflow-hidden pt-20">
+      {/* Full Background Image */}
+      <div className="absolute inset-0 w-full h-full">
         <img
           src="/hero-house.png"
           alt="Modern House"
           className="w-full h-full object-cover object-center"
         />
-        {/* Fade gradient from left to right */}
-        <div className="absolute inset-y-0 left-0 w-64 bg-gradient-to-r from-primary via-primary/50 to-transparent" />
+        {/* Gradient overlay: solid dark on left fading to transparent on right on desktop, solid semi-transparent on mobile */}
+        <div className="absolute inset-0 bg-primary/60 lg:bg-gradient-to-r lg:from-primary/90 lg:via-transparent lg:to-transparent" />
       </div>
 
       <div className="max-w-7xl mx-auto w-full relative z-10 flex-grow flex items-center">
@@ -113,18 +113,6 @@ export default function Hero() {
                 </div>
               </div>
             </motion.div>
-          </div>
-          
-          {/* Mobile Image (Visible only on small screens) */}
-          <div className="lg:hidden col-span-full px-6 pb-12">
-            <div className="w-full h-[300px] sm:h-[400px] rounded-2xl overflow-hidden relative">
-              <img
-                src="/hero-house.png"
-                alt="Modern House"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-primary/20" />
-            </div>
           </div>
         </div>
       </div>
