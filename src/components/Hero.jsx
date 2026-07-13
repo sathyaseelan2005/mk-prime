@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 export default function Hero() {
   return (
-    <section id="hero" className="w-full overflow-hidden pt-24 bg-primary">
+    <section id="hero" className="w-full overflow-hidden pt-16 bg-primary">
       <img
         src="/hero-bg-2.png"
         alt="Hero Image"

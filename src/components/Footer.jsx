@@ -13,7 +13,7 @@ import { services } from '../data/services';
 
 const socialLinks = [
   { icon: Facebook, href: 'https://www.facebook.com/share/18oy7chVSw/', label: 'Facebook' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Instagram, href: 'https://instagram.com/mkprimecoating', label: 'Instagram' },
 ];
 
 export default function Footer() {
