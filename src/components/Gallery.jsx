@@ -4,26 +4,22 @@ const projects = [
   {
     id: 1,
     title: 'EXTERIOR PAINTING',
-    beforeImage: 'https://picsum.photos/seed/ext-before/400/400',
-    afterImage: 'https://picsum.photos/seed/ext-after/400/400',
+    image: '/exterior-painting.png',
   },
   {
     id: 2,
     title: 'WATERPROOFING',
-    beforeImage: 'https://picsum.photos/seed/water-before/400/400',
-    afterImage: 'https://picsum.photos/seed/water-after/400/400',
+    image: '/waterproofing.png',
   },
   {
     id: 3,
     title: 'INTERIOR PAINTING',
-    beforeImage: 'https://picsum.photos/seed/int-before/400/400',
-    afterImage: 'https://picsum.photos/seed/int-after/400/400',
+    image: '/interior-painting.png',
   },
   {
     id: 4,
     title: 'TEXTURE PAINTING',
-    beforeImage: 'https://picsum.photos/seed/tex-before/400/400',
-    afterImage: 'https://picsum.photos/seed/tex-after/400/400',
+    image: '/texture-painting.png',
   }
 ];
 
@@ -48,28 +44,9 @@ export default function Gallery() {
                 transition={{ delay: index * 0.1 }}
                 className="flex flex-col items-center group cursor-pointer"
               >
-                <div className="flex w-full h-[280px] rounded-lg overflow-hidden mb-5 shadow-lg hover:shadow-xl transition-shadow relative">
-                  {/* Before */}
-                  <div className="w-1/2 relative h-full">
-                    <img src={project.beforeImage} alt={`${project.title} Before`} className="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" />
-                    <div className="absolute bottom-3 left-3 bg-black/90 text-white text-[10px] px-3 py-1 font-bold tracking-wider rounded border border-white/20">BEFORE</div>
-                  </div>
-
-                  {/* Divider line */}
-                  <div className="w-[3px] bg-white h-full z-10 shadow-sm relative">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-md flex items-center justify-center">
-                      <div className="w-2 h-2 bg-secondary rounded-full" />
-                    </div>
-                  </div>
-
-                  {/* After */}
-                  <div className="w-1/2 relative h-full">
-                    <img src={project.afterImage} alt={`${project.title} After`} className="w-full h-full object-cover filter brightness-105 group-hover:brightness-110 transition-all duration-500" />
-                    <div className="absolute bottom-3 right-3 bg-black/90 text-white text-[10px] px-3 py-1 font-bold tracking-wider rounded border border-white/20">AFTER</div>
-                  </div>
+                <div className="w-full h-[280px] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-
-                <h4 className="text-text font-bold text-sm tracking-wide uppercase">{project.title}</h4>
               </motion.div>
             ))}
           </div>
