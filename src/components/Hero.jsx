@@ -8,7 +8,7 @@ export default function Hero() {
       <img
         src="/hero-bg-2.png"
         alt="Hero Image"
-        className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] object-cover object-center"
+        className="w-full max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-[600px] object-contain object-center"
       />
     </section>
   );
