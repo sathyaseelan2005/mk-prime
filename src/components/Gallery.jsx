@@ -34,7 +34,7 @@ export default function Gallery() {
             Recently <span className="text-secondary">Completed</span> Projects
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
@@ -44,7 +44,7 @@ export default function Gallery() {
                 transition={{ delay: index * 0.1 }}
                 className="flex flex-col items-center group cursor-pointer"
               >
-                <div className="w-full h-[280px] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
+                <div className="w-full h-[300px] sm:h-[400px] lg:h-[450px] xl:h-[500px] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
               </motion.div>
