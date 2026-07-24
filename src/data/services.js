@@ -8,6 +8,10 @@ export const services = [
     description: 'Transform your indoor spaces with our expert interior painting services. We handle walls, ceilings, trim, and specialty finishes.',
     longDescription: 'Our interior painting services are designed to revitalize your home or commercial space. We use premium paints and meticulous preparation to ensure a flawless finish. From color consultation to the final touch-up, our team is dedicated to exceeding your expectations. We protect your furniture and floors, repair minor wall imperfections, and apply high-quality coatings that are durable and easy to clean.',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80',
+    gallery: [
+      '/before-after/interior-1.png',
+      '/before-after/interior-2.png',
+    ],
     features: ['Wall & Ceiling Painting', 'Trim & Molding', 'Specialty Finishes', 'Color Consultation'],
   },
   {
@@ -17,6 +21,10 @@ export const services = [
     description: 'Protect and beautify your property exterior with weather-resistant coatings that stand the test of time.',
     longDescription: 'Protect your investment and boost curb appeal with our exterior painting services. We use high-performance, weather-resistant paints designed to withstand harsh elements. Our comprehensive process includes power washing, scraping, caulking, and priming to ensure maximum adhesion and longevity. Whether it is wood, stucco, brick, or vinyl siding, we have the expertise to deliver a stunning and durable finish.',
     image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80',
+    gallery: [
+      '/before-after/exterior-1.png',
+      '/before-after/exterior-2.png',
+    ],
     features: ['House Exterior', 'Garage & Doors', 'Deck & Fence', 'Power Washing'],
   },
   {
@@ -26,6 +34,10 @@ export const services = [
     description: 'Comprehensive waterproofing solutions to protect your property from moisture damage and leaks.',
     longDescription: 'Don\'t let water damage compromise your property\'s structural integrity. Our comprehensive waterproofing solutions provide a robust barrier against moisture, preventing leaks, mold growth, and costly repairs. We specialize in basement waterproofing, roof coatings, exterior wall sealing, and bathroom waterproofing. Using advanced materials and proven techniques, we ensure your building remains dry and protected year-round.',
     image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80',
+    gallery: [
+      '/before-after/waterproofing-3.png',
+      '/before-after/waterproofing-4.png',
+    ],
     features: ['Basement Waterproofing', 'Roof Coating', 'Bathroom Sealing', 'Leak Repair'],
   },
   {
@@ -35,6 +47,10 @@ export const services = [
     description: 'Add depth and character to your walls with our creative texture painting techniques and designs.',
     longDescription: 'Elevate your interior design with our bespoke texture painting services. Move beyond flat colors and introduce tactile elements that add depth, character, and luxury to your walls. We offer a wide range of techniques, including Venetian plaster, stucco finishes, metallic effects, and custom geometric patterns. Our artisans meticulously apply these finishes to create unique, eye-catching feature walls that reflect your personal style.',
     image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+    gallery: [
+      '/before-after/texture-1.png',
+      '/before-after/texture-2.png',
+    ],
     features: ['Stucco Finish', 'Venetian Plaster', 'Metallic Effects', 'Custom Patterns'],
   },
   {
@@ -44,6 +60,10 @@ export const services = [
     description: 'Specialized coating solutions for factories, warehouses, and industrial facilities with safety compliance.',
     longDescription: 'Our industrial painting services are tailored to meet the rigorous demands of factories, warehouses, and manufacturing plants. We understand the importance of minimal downtime and adhere to strict safety protocols. We apply specialized, high-durability coatings that resist chemicals, abrasion, and extreme temperatures. From epoxy floor coatings to heavy machinery painting and safety line markings, we provide comprehensive solutions for industrial environments.',
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+    gallery: [
+      '/before-after/industrial-1.png',
+      '/before-after/industrial-2.png',
+    ],
     features: ['Floor Coatings', 'Machinery Painting', 'Safety Markings', 'Corrosion Protection'],
   },
   {
@@ -53,6 +73,10 @@ export const services = [
     description: 'Large-scale painting projects for government buildings, schools, hospitals, and commercial complexes.',
     longDescription: 'We possess the capacity, expertise, and compliance standards required to execute large-scale painting contracts for government and private institutions. Our portfolio includes successful projects for schools, hospitals, municipal buildings, and expansive commercial complexes. We manage every aspect of the project, from detailed planning and procurement to execution and final inspection, ensuring timely delivery and uncompromising quality on a grand scale.',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
+    gallery: [
+      '/before-after/gov-contracts-1.png',
+      '/before-after/gov-contracts-2.png',
+    ],
     features: ['Public Buildings', 'Schools & Colleges', 'Hospitals', 'Commercial Complexes'],
   },
 ];

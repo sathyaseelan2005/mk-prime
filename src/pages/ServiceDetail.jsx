@@ -2,7 +2,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { services } from '../data/services';
-import Gallery from '../components/Gallery';
+import ServiceGallery from '../components/ServiceGallery';
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -85,7 +85,9 @@ export default function ServiceDetail() {
       </div>
       
       {/* Gallery Section */}
-      <Gallery />
+      {service.gallery && service.gallery.length > 0 && (
+        <ServiceGallery projects={service.gallery} />
+      )}
 
       {/* Bottom CTA */}
       <div className="section-padding pb-16">

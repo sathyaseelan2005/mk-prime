@@ -74,9 +74,9 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg transition-colors text-white ml-auto"
+              className={`lg:hidden p-2 rounded-lg transition-colors text-white ml-auto ${isMobileMenuOpen ? 'opacity-0 pointer-events-none' : ''}`}
             >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              <Menu size={24} />
             </button>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function Navbar() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
-                    className="mt-6"
+                    className="mt-6 flex flex-col gap-3"
                   >
                     <Link
                       to="/contact"
@@ -127,6 +127,12 @@ export default function Navbar() {
                     >
                       Get Free Quote
                     </Link>
+                    <button
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block w-full bg-primary text-white text-center py-4 rounded-full font-semibold hover:bg-primary/90 transition-colors"
+                    >
+                      Close
+                    </button>
                   </motion.div>
                 </div>
               </div>
